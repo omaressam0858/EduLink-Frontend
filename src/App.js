@@ -3,6 +3,7 @@ import NavigationBar from "./Navbar/Navigationbar";
 
 import GroupList from "./Groups/Group";
 import CreateGroup from "./Groups/CreateGroup";
+import CreateSchedule from "./Groups/CreateSchedule";
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
         <Route path="/students/:id" />
 
         <Route path="/groups/add" element={<CreateGroup/>} />
-        <Route path="/groups/schedule/add" />
+        <Route path="/groups/schedule/add" element={<CreateSchedule />}  />
         <Route path="/groups/:id" />
       </Routes>
       </NavigationBar>
