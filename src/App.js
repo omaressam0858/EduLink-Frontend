@@ -1,11 +1,12 @@
-import { Route, Routes , Link } from "react-router-dom";
+import { Route, Routes  } from "react-router-dom";
 import NavigationBar from "./Navbar/Navigationbar";
 
 import GroupList from "./Groups/Group";
+import CreateGroup from "./Groups/CreateGroup";
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
+      <NavigationBar >
       <Routes>
         <Route path="/" element={<GroupList />}/>
         
@@ -13,10 +14,11 @@ function App() {
         <Route path="/students/add" />
         <Route path="/students/:id" />
 
-        <Route path="/groups/add" />
+        <Route path="/groups/add" element={<CreateGroup/>} />
         <Route path="/groups/schedule/add" />
         <Route path="/groups/:id" />
       </Routes>
+      </NavigationBar>
     </div>
   );
 }
