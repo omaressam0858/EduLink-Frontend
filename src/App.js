@@ -24,6 +24,7 @@ function App() {
         <Route path="/groups/schedule/add" element={<CreateSchedule />}  />
         <Route path="/groups/:groupId" element ={<GroupDetailsComponent/>}/>
         
+        <Route path="/absence" element= {<TodayAbsence />}/>
         <Route path="/absence/:groupId" element= {<TodayAbsence />}/>
       </Routes>
       </NavigationBar>

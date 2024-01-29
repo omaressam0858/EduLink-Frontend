@@ -1,6 +1,6 @@
 import logo from './favicon.svg';
 import React from 'react';
-import { MdGroups2, MdGroupAdd, MdSchedule, MdPersonAdd, MdPerson } from 'react-icons/md';
+import { MdGroups2, MdGroupAdd, MdSchedule, MdPersonAdd, MdPerson , MdOutlineQrCode } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 export default function NavigationBar(props) {
@@ -11,6 +11,11 @@ export default function NavigationBar(props) {
     <div className="h-screen w-full bg-white relative flex overflow-hidden">
 
       <aside className="h-full w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white">
+        <Link className="text-white" to='/'>
+          <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
+            <MdOutlineQrCode />
+          </div>
+        </Link>
         <Link className="text-white" to='/'>
           <div className="h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white  hover:duration-300 hover:ease-linear focus:bg-white">
             <MdGroups2 />
