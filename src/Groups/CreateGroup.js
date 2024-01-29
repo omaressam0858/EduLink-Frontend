@@ -26,7 +26,7 @@ export default function CreateGroup() {
             // Handle success if needed
             setSuccess(true);
             if(response.status !== 200) return new Error(response.message)
-            console.log('API response:', response.data);
+
         } catch (error) {
             // Handle error if needed
             setError(error);

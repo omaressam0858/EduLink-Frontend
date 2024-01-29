@@ -1,3 +1,3 @@
 module.exports = {
-    API_URL: "http://localhost:3000/api",
+    API_URL: "https://edulink-nksr.onrender.com/api",
 }

@@ -28,7 +28,7 @@ To get started with EduLink, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/edulink-frontend.git
+   git clone https://github.com/omaressam0858/EduLink-Frontend.git
    ```
 
 2. **Install Dependencies:**

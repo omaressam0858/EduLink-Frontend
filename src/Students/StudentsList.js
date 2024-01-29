@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Loading from '../Loading/Loading';
-const API = "http://localhost:3000/api";
+const API = require('../api.config').API_URL;
 
 
 export default function StudentList() {
@@ -14,7 +14,6 @@ export default function StudentList() {
         const fetchData = async () => {
             try {
                 const response = await axios.get(API + '/students');
-                console.log(response.data)
                 setData(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
