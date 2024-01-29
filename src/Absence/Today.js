@@ -15,7 +15,7 @@ export default function TodayAbsence() {
         const fetchData = async () => {
             try {
                 const response = await axios.get(API + '/students/attendees/absent/' + groupId);
-                console.log(response.data)
+
                 setData(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
