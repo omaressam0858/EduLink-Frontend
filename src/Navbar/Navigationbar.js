@@ -58,7 +58,7 @@ export default function NavigationBar(props) {
           </div>
         </header>
 
-        <main className="w-full h-full ">
+        <main className="w-full h-full overflow-auto">
           {props.children}
         </main>
       </div>
