@@ -47,9 +47,7 @@ const CreateSchedule = () => {
 
         try {
             setLoading(true); // Set loading to true before making the API request
-            const response = await axios.post(API + "/groups/schedule", data);
-            console.log('API response:', response.data);
-
+            await axios.post(API + "/groups/schedule", data);
             // Optionally, you can reset the form after successful submission
             setSelectedDay('');
             setSelectedTime('');
