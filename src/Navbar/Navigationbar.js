@@ -8,7 +8,7 @@ export default function NavigationBar(props) {
 
 
 
-    <div className="h-screen w-full bg-white relative flex overflow-hidden">
+    <div className="h-screen w-full bg-white relative flex overflow-hidden ">
 
       <aside className="h-full w-16 flex flex-col space-y-10 items-center justify-center relative bg-gray-800 text-white">
         <Link className="text-white" to='/absence'>
@@ -63,7 +63,7 @@ export default function NavigationBar(props) {
           </div>
         </header>
 
-        <main className="w-full h-full ">
+        <main className="w-full h-full overflow-y-auto">
           {props.children}
         </main>
       </div>

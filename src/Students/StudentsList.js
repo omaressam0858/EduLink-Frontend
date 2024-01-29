@@ -30,7 +30,7 @@ export default function StudentList() {
     }
 
     return (
-        <div className="bg-white p-8 rounded shadow-md w-full">
+        <div className="bg-white p-8 rounded shadow-md w-full overflow-auto">
             <h2 className="text-2xl font-semibold mb-4">Students</h2>
             <table className="w-full border-collapse border border-gray-300">
                 <thead>

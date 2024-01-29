@@ -35,7 +35,7 @@ export default function GroupList() {
 
 
     return (
-        <div>
+        <div className='overflow-y-auto'>
             {data.map((group) => (
                 <Link className='text-black' to={"/groups/" + group.id} key={group.id}>
                     <div className="bg-white p-4 shadow-md rounded-md m-4" key={group.id} >
