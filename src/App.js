@@ -4,6 +4,9 @@ import NavigationBar from "./Navbar/Navigationbar";
 import GroupList from "./Groups/Group";
 import CreateGroup from "./Groups/CreateGroup";
 import CreateSchedule from "./Groups/CreateSchedule";
+import GroupDetailsComponent from "./Groups/GroupPage";
+
+import StudentList from "./Students/StudentsList";
 function App() {
   return (
     <div className="App">
@@ -11,13 +14,14 @@ function App() {
       <Routes>
         <Route path="/" element={<GroupList />}/>
         
-        <Route path="/students" />
+        <Route path="/students" element={<StudentList />}/>
         <Route path="/students/add" />
-        <Route path="/students/:id" />
 
         <Route path="/groups/add" element={<CreateGroup/>} />
         <Route path="/groups/schedule/add" element={<CreateSchedule />}  />
-        <Route path="/groups/:id" />
+        <Route path="/groups/:groupId" element ={<GroupDetailsComponent/>}/>
+        
+        <Route path="/absence/:groupId" element ={<GroupDetailsComponent/>}/>
       </Routes>
       </NavigationBar>
     </div>
