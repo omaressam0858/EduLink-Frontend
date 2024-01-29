@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-const API = "http://localhost:3000/api";
+const API = require('../api.config').API_URL;
 
 const StudentAdd = () => {
     const [groups, setGroups] = useState([]);
