@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const API = "http://localhost:3000/api";
+const API = require('../api.config').API_URL;
 
 
 export default function CreateGroup() {

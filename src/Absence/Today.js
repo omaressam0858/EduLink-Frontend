@@ -25,7 +25,7 @@ export default function TodayAbsence() {
         };
 
         fetchData();
-    }, []);
+    }, [groupId]);
 
     if (loading) {
         return (<Loading />);

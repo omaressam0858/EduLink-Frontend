@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Loading from '../Loading/Loading';
-const API = "http://localhost:3000/api";
-
+const API = require('../api.config').API_URL;
 
 const CreateSchedule = () => {
     const [groups, setGroups] = useState([]);
