@@ -32,9 +32,8 @@ const GroupDetailsComponent = () => {
 
         // Make API request to register attendee for the given studentId
         try {
-            await axios.post(API + '/students/attendees/' + attendeeStudentId, {});
-            const student = await axios.get(API + '/students/' + attendeeStudentId);
-            setStudentName(student.data.name);
+            const response = await axios.post(API + '/students/attendees/' + attendeeStudentId, {});
+            setStudentName(response.data.name);
             // Optionally, you can update the students list or show a success message
         } catch (error) {
             console.error('Error registering attendee:', error);
