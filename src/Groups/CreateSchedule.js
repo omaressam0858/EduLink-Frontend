@@ -66,8 +66,7 @@ const CreateSchedule = () => {
     return (
         <div className="bg-gray-100 min-h-screen flex items-center justify-center">
             <div className="bg-white p-8 rounded shadow-md w-96">
-                <h2 className="text-2xl font-semibold mb-4">Group Schedule Component</h2>
-
+                <h2 className="text-2xl font-semibold mb-4">Create Group Schedule</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="group" className="block text-sm font-medium text-gray-600">

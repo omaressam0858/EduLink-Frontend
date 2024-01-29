@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams,Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import Loading from '../Loading/Loading';
 const API = "http://localhost:3000/api";
@@ -77,6 +77,13 @@ const GroupDetailsComponent = () => {
                         >
                             Register Attendee
                         </button>
+                        <Link to={"/absence/" + groupDetails.id} className='no-underline'>
+                            <button
+                                className="block mt-2 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:outline-none focus:ring focus:border-blue-300"
+                            >
+                                Today Absence
+                            </button>
+                        </Link>
                         {studentName && (
                             <p className="mt-2 bg-green-300 align-middle text-center font-medium font-bold rounded  py-2">{studentName}</p>
                         )}
